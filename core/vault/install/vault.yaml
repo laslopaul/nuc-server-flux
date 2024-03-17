@@ -16,6 +16,7 @@ metadata:
 spec:
   targetNamespace: vault
   interval: 5m
+  timeout: 30m
   chart:
     spec:
       chart: vault

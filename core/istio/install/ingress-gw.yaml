@@ -19,3 +19,20 @@ spec:
   releaseName: istio-ingress-gw
   dependsOn:
     - name: istiod
+---
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: http-gw
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingress-gw
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - nc.nuc-server-nucnet
+    - qb.nuc-server.nucnet

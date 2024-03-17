@@ -9,7 +9,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: istio/gateway
+      chart: gateway
       version: "${istio_version}"
       sourceRef:
         kind: HelmRepository

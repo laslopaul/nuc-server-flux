@@ -9,7 +9,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: istiod/istiod
+      chart: istiod
       version: "${istio_version}"
       sourceRef:
         kind: HelmRepository

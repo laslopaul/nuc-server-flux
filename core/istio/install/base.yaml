@@ -13,8 +13,8 @@ kind: HelmRelease
 metadata:
   name: istio
   namespace: flux-system
-  targetNamespace: istio-system
 spec:
+  targetNamespace: istio-system
   interval: 5m
   chart:
     spec:

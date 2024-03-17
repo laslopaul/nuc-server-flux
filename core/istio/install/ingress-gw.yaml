@@ -4,8 +4,8 @@ kind: HelmRelease
 metadata:
   name: istio-ingress-gw
   namespace: flux-system
-  targetNamespace: istio-system
 spec:
+  targetNamespace: istio-system
   interval: 5m
   chart:
     spec:

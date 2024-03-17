@@ -11,7 +11,7 @@ spec:
     name: flux-system
   path: "./core/vault/install"
   prune: true
-  wait: true
+  wait: false
   postBuild:
     substitute:
       vault_chart_version: "0.12.3"

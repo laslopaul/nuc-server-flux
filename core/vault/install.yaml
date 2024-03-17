@@ -14,4 +14,4 @@ spec:
   wait: true
   postBuild:
     substitute:
-      vault_version: "1.15.*"
+      vault_chart_version: "0.12.3"

@@ -19,7 +19,7 @@ spec:
   chart:
     spec:
       chart: vault
-      version: "${vault_chart_version}"
+      version: "${vault_version}"
       sourceRef:
         kind: HelmRepository
         name: bitnami

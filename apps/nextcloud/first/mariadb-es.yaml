@@ -20,6 +20,10 @@ spec:
       remoteRef:
         key: apps/nextcloud/db
         property: mariadb-replication-password
+    - secretKey: mariadb-username
+      remoteRef:
+        key: apps/nextcloud/db
+        property: mariadb-username
     - secretKey: mariadb-password
       remoteRef:
         key: apps/nextcloud/db

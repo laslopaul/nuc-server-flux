@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - first.yaml
-  # - second.yaml
+  - second.yaml

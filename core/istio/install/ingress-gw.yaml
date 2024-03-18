@@ -34,5 +34,5 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - nc.nuc-server-nucnet
+    - nc.nuc-server.nucnet
     - qb.nuc-server.nucnet

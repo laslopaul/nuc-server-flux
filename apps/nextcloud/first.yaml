@@ -11,4 +11,4 @@ spec:
     name: flux-system
   path: "./apps/nextcloud/first"
   prune: true
-  wait: false
+  wait: true

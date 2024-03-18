@@ -32,7 +32,7 @@ spec:
       host: nc.nuc-server.nucnet
       existingSecret:
         enabled: true
-        secretName: nextcloud-admin
+        secretName: nextcloud-account
 
     internalDatabase:
       enabled: false

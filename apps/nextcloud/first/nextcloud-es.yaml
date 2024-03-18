@@ -10,13 +10,13 @@ spec:
     name: nextcloud
     kind: SecretStore
   target:
-    name: nextcloud-admin
+    name: nextcloud-account
   data:
     - secretKey: nextcloud-username
       remoteRef:
-        key: apps/nextcloud/admin
+        key: apps/nextcloud/user
         property: nextcloud-username
     - secretKey: nextcloud-password
       remoteRef:
-        key: apps/nextcloud/admin
+        key: apps/nextcloud/user
         property: nextcloud-password

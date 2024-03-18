@@ -1,0 +1,26 @@
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: mariadb-es
+  namespace: nextcloud
+spec:
+  refreshInterval: "15s"
+  secretStoreRef:
+    name: nextcloud
+    kind: SecretStore
+  target:
+    name: mariadb-admin
+  data:
+    - secretKey: mariadb-root-password
+      remoteRef:
+        key: apps/nextcloud/db
+        property: mariadb-root-password
+    - secretKey: mariadb-replication-password
+      remoteRef:
+        key: apps/nextcloud/db
+        property: mariadb-replication-password
+    - secretKey: mariadb-password
+      remoteRef:
+        key: apps/nextcloud/db
+        property: mariadb-password

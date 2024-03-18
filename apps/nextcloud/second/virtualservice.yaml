@@ -1,0 +1,17 @@
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: nextcloud-vs
+  namespace: nextcloud
+spec:
+  hosts:
+  - nc.nuc-server.nucnet
+  gateways:
+  - istio-system/http-gw
+  http:
+  - route:
+    - destination:
+        host: nextcloud
+        port:
+          number: 8080
